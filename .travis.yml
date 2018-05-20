@@ -4,17 +4,17 @@ python:
   - '3.6'
 
 env:
-  - DJANGO_SETTINGS_MODULE='backend.settings'
-  - SECRET_KEY='YTLrzJgPErEjKOe5fgDv'
-  - DB_ENGINE='django.db.backends.postgresql'
-  - DB_NAME='arkiot'
-  - DB_USER='postgres'
-  - DB_PASSWORD=''
-  - DB_HOST='localhost'
-  - DB_PORT='5432'
-  - REDIS_HOST='localhost'
+  - DJANGO_SETTINGS_MODULE=backend.settings
+  - SECRET_KEY=YTLrzJgPErEjKOe5fgDv
+  - DB_ENGINE=django.db.backends.postgresql
+  - DB_NAME=arkiot
+  - DB_USER=postgres
+  - DB_PASSWORD=
+  - DB_HOST=localhost
+  - DB_PORT=5432
+  - REDIS_HOST=localhost
   - REDIS_PORT=6379
-  - REDIS_PASSWORD=''
+  - REDIS_PASSWORD=
 
 services:
   - postgresql
