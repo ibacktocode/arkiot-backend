@@ -36,10 +36,10 @@ class SmsVerify:
 
 class OtpCaching:
     pool = redis.ConnectionPool(
-        host=settings.REDSIS_HOST,
-        port=settings.REDSIS_PORT,
-        # db=settings.REDSIS_DB,
-        password=settings.REDSIS_PASSWORD
+        host=settings.REDIS_HOST,
+        port=settings.REDIS_PORT,
+        # db=settings.REDIS_DB,
+        password=settings.REDIS_PASSWORD
     )
     r = redis.Redis(connection_pool=pool)
 
