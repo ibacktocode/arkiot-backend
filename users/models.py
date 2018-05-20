@@ -71,5 +71,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         db_table = 'user'
 
-
-
+class Sms:
+    def __init__(self, **kwargs):
+        for field in ('otp'):
+            setattr(self, field, kwargs.get(field, None))
