@@ -47,7 +47,9 @@ class OtpCaching:
         self.r.set(key, otp, ex=60)
 
     def get_cache_otp(self, key):
-        return self.r.get(key).decode('ascii')
+        otp = self.r.get(key)
+        if otp is not None:
+            return otp.decode('ascii')
 
     def delete_cache_otp(self, key):
         return self.r.delete(key)

@@ -1,7 +1,7 @@
-from rest_framework.serializers import Serializer, CharField
+from rest_framework.serializers import Serializer, CharField, BooleanField
 from users.models import Sms
 class SmsRequestOtpSerializer(Serializer):
     otp = CharField(read_only=True, max_length=10)
 
-    # def create(self, validated_data):
-    #     return Sms(validated_data)
+class SmsVerifyOtpSerializer(Serializer):
+    status = BooleanField(read_only=True)
