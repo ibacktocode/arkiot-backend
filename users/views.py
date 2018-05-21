@@ -2,7 +2,6 @@ from users.serializers import SmsRequestOtpSerializer, SmsVerifyOtpSerializer
 from rest_framework import views
 from rest_framework.response import Response
 from users.utils import SmsVerify
-# from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from oauth2_provider.contrib.rest_framework import OAuth2Authentication
 from rest_framework.permissions import IsAuthenticated
 from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope
