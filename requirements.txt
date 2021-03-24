@@ -60,7 +60,7 @@ PySocks==1.6.8
 pytz==2018.4
 redis==2.10.6
 requests==2.18.4
-rsa==3.4.2
+rsa==4.1
 six==1.11.0
 twilio==6.14.0
 uritemplate==3.0.0
